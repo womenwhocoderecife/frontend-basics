@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Price Component</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        background-color: #e6eff6;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      ul li {
+        color: rgba(255, 255, 255, 0.753);
+        font-size: 13px;
+        margin: 7px auto;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 700px;
+        margin: auto;
+        border-radius: 10px;
+        background-color: white;
+        font-family: sans-serif;
+        -webkit-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.27);
+        box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.27);
+        overflow: hidden;
+      }
+      .head {
+        padding: 30px 40px;
+      }
+      .head .title {
+        color: #30b3b2;
+        font-size: 22px;
+      }
+      .head .subtitle {
+        color: #bfdf34;
+        font-size: 16px;
+      }
+      .head .description {
+        color: rgb(158, 158, 158);
+        font-size: 15px;
+        line-height: 25px;
+      }
+      .subtitle {
+        font-size: 18px;
+      }
+      .left,
+      .right {
+        flex: 1;
+        color: white;
+        padding: 20px 40px 30px;
+      }
+      .left {
+        background-color: #30b3b2;
+      }
+      .right {
+        background-color: #4abebd;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+      }
+      .price .value {
+        font-size: 28px;
+        margin-right: 10px;
+      }
+      .price .description {
+        color: rgba(255, 255, 255, 0.568);
+        font-size: 14px;
+      }
+      .details {
+        font-size: 15px;
+      }
+      .sign-up-btn {
+        width: 100%;
+        margin: 10px auto;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: #bfdf34;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.27);
+        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.27);
+      }
+
+      @media screen and (max-width: 720px) {
+        .container {
+          flex-direction: column;
+          max-width: 400px;
+          letter-spacing: 1.1px;
+          font-weight: lighter;
+        }
+        .head {
+          padding: 15px 25px;
+        }
+        .head .title {
+          padding-bottom: 10px;
+        }
+        .left,
+        .right {
+          padding: 15px 25px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1 class="title">Join our community</h1>
+        <h2 class="subtitle">30-day, hassie-free money back guarantee</h2>
+        <p class="description">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+      <div class="left">
+        <h2 class="subtitle">Monthly Subscription</h2>
+        <div class="price">
+          <span class="value">$29</span>
+          <span class="description">per month</span>
+        </div>
+        <p class="details">Full access for less than $1 a day</p>
+        <button class="sign-up-btn">Sign Up</button>
+      </div>
+      <div class="right">
+        <h2 class="subtitle">Why Us</h2>
+        <ul class="list">
+          <li class="item">Tutorials by industry experts</li>
+          <li class="item">Peer & expert code reviews</li>
+          <li class="item">Coding exercises</li>
+          <li class="item">Access to our Github repos</li>
+          <li class="item">Community forum</li>
+          <li class="item">Flashcard decks</li>
+          <li class="item">New videos every week</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
